@@ -141,3 +141,10 @@ nav ul li a:hover::after{
     display: block;
 }
 /* about section */
+
+/* services */
+#services{
+    height: 100vh;
+    width: 100%;
+}
+/* services */
