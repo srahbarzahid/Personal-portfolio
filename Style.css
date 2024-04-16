@@ -126,4 +126,18 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 60%;
 }
+.tab-contents span{
+    color: #ab1d4a;
+}
+.tab-contents ul li{
+    list-style: none;
+    font-size: 16px;
+    font-family: "Poppins";
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
 /* about section */

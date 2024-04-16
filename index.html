@@ -48,18 +48,45 @@
                     <h1 class="sub-title">About Me</h1>
                     <p>As a dedicated BSc Computer Science student and proficient Flutter developer, I am passionate about exploring the dynamic and evolving landscape of computer science. With a strong foundation in programming and software development, I'm motivated by problem-solving and innovation. I'm committed to staying updated on the latest industry trends and aspire to make a positive impact in the tech world. I am poised to make a positive impact in the tech world and contribute meaningfully to future technological advancements. I am currently focused on MERN stack development, aiming to broaden my skill set. </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li></li>
+                            <li><span>Web Design</span> <br> Designing Web interfaces</li>
+                            <li><span>Web development</span> <br> web app development</li>
+                            <li><span>App development </span><br> Andriod App development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-24</span> <br> Bsc.Computer Sceince</li>
+                            <li><span>2019-21</span> <br> Plus Two(Biology Science)</li>
+                            <li><span>2017-19</span> <br> SSLC</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<!-- javascript -->
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
   </body>
 </html>
