@@ -211,13 +211,13 @@ nav ul li a:hover::after{
     align-items: center;
 }
 .work-list .work-card{
-    width: 280px;
-    height: 320px; 
+    width: 330px;
+    height: 260px; 
     position: relative;
     cursor: pointer;
     overflow: hidden;
     border-radius: 10px;
-    margin-right: 35px;
+    margin: auto;
 }
 .work-list .work-card img{
     width: 100%;
@@ -225,6 +225,8 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     opacity: 0.9;
+    background-size: cover;
+    background-position: center;
 }
 .layer h3{
     color: #fff;
@@ -513,6 +515,11 @@ nav .fa-solid{
     }
     .contact-right form{
         margin-top: 15px;
+    }
+    .work-list .work-card{
+        width: 320px;
+        height: 280px;
+        margin: 20px auto;
     }
 
 }
