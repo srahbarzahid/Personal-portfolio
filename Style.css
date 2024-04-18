@@ -78,7 +78,7 @@ nav ul li a:hover::after{
 /* about section */
 #about{
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
 }
 .row{
     display: flex;
@@ -145,8 +145,9 @@ nav ul li a:hover::after{
 
 /* services */
 #services{
-    height: 70vh;
+    /* height: 70vh; */
     width: 100%;
+    margin-top: 50px;
     /* padding: 30px 0; */
 }
 .services-card{
@@ -169,8 +170,9 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 .services-card .card i{
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #ab1d4a;
 }
 .services-card .card .card-title{
     font-size: 23px;
@@ -186,7 +188,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 15px;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .services-card .card:hover{
     background: #ff004f;
@@ -199,18 +201,18 @@ nav ul li a:hover::after{
 /* projects */
 #projects{
     width: 100%;
-    height: 80vh;
+    /* height: 85vh; */
 }
 .work-list{
     padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
 }
 .work-list .work-card{
     width: 280px;
-    height: 290px; 
+    height: 320px; 
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -222,6 +224,7 @@ nav ul li a:hover::after{
     height: 100%;
     border-radius: 10px;
     display: block;
+    opacity: 0.9;
 }
 .layer h3{
     color: #fff;
@@ -233,6 +236,19 @@ nav ul li a:hover::after{
     font-size: 15px;
     font-family: Arial;
     font-weight: 300;
+}
+.work-card .layer a{
+    text-decoration: none;
+    margin-top: 20px;
+    background: #fff;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.work-card .layer a .fa-solid{
+    color: #ab1d4a;
+    font-size: 20px;
 }
 .work-list .work-card .layer{
     width: 100%;
@@ -257,4 +273,129 @@ nav ul li a:hover::after{
 .work-list .work-card:hover .layer{
     height: 100%; 
     transition: 1s;   
+}
+.services-btn{
+    display: block;
+    padding: 10px 60px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    background: #000;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s;
+    margin: 40px auto;
+}
+.services-btn:hover{
+    background: #ff004f;
+}
+
+
+/* contact section */
+#contacts{
+    width: 100%;
+}
+.contact-left{
+    flex-basis: 45%;
+}
+.contact-right{
+    flex-basis: 55%;
+}
+.contact-left h1{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.contact-left p{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 18px;
+}.contact-left i{
+    font-size: 24px;
+    font-weight: 300;
+    margin-right: 10px;
+    color: #ab1d4a
+}
+.contact-left .social-icons{
+    margin-top: 12px;
+}
+.contact-left .social-icons a{
+    font-size: 28px;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: 1s;
+}
+.contact-left .social-icons a:hover{
+    transform: rotate(-360deg);
+}
+.contact-left .download-cv{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 22px;
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #000;
+    border: 1px solid #ff004f;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    transition: 1s;
+    position: relative;
+}
+.contact-left .download-cv:hover{
+    background: #ff004f;
+    transform: translateY(-4px);
+}
+.contact-right form{
+    width: 100%;
+}
+.contact-right form input,textarea{
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #262626;
+    padding: 8px 10px;
+    color: #fff;
+}
+.contact-right form .btn{
+    padding: 10px 60px;
+    border: none;
+    border-radius: 4px;
+    background: #ff004f;
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+    transition: 0.5s;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.contact-right .btn:hover{
+    transform: translateY(-4px);
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #262626;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+footer span{
+    color: #ff004f;
+    font-size: 17px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: italic;
 }
