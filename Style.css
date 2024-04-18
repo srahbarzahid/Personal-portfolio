@@ -424,11 +424,11 @@ nav .fa-solid{
         color: white;
     }
     .header-text{
-        font-size: 26px;
+        font-size: 29px;
         margin-top: 60%;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 32px;
         margin-top: 15px;
     }
     nav .fa-solid{
@@ -520,6 +520,20 @@ nav .fa-solid{
         width: 320px;
         height: 280px;
         margin: 20px auto;
+    }
+    .services-btn{
+        padding: 12px 50px;
+        font-size: 14px;
+    }
+    .contact-left .social-icons a{
+        font-size: 28px;
+    }
+    .download-cv{
+        padding: 12px 50px;
+        font-size: 14px;
+    }
+    .contact-right form input,textarea{
+        padding: 10px 12px;
     }
 
 }
