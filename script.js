@@ -1,3 +1,29 @@
+var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+     var menu=document.getElementById('side-menu');
+
+     function openmenu(){
+      menu.style.right="0";
+     }
+     function closedmenu(){
+      menu.style.right="-300px";
+     }
+
+// Message submission
+
 const form = document.querySelector('form');
 const firstname =document.getElementById('first-name');
 const lastname = document.getElementById('last-name');
@@ -34,3 +60,5 @@ form.addEventListener("submit", (e) =>{
     e.preventDefault();
     sendemail();
 })
+
+
